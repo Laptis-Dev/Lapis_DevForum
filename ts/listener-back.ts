@@ -1,9 +1,5 @@
 const KEYBOARD = document.addEventListener("keyup", KeyListener);
 function KeyListener(esc: { key: string; }) {
-  if (esc.key === "Escape") {
-    const confirmBack = confirm("要返回上一页吗?");
-    if (confirmBack) {
-      history.back();
-    }
-  }
-} 
+  if (esc.key === "Escape")
+    history.back();
+}
